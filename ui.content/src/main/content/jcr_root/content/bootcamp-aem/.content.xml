@@ -2,16 +2,21 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:allowedTemplates="[/conf/bootcamp-aem/settings/wcm/templates/(?!xf-).*]"
+        cq:allowedTemplates="/conf/bootcamp-aem/settings/wcm/templates/(?!xf-).*"
         cq:conf="/conf/bootcamp-aem"
+        cq:lastModified="{Date}2023-06-02T10:29:26.538-03:00"
+        cq:lastModifiedBy="admin"
         cq:redirectTarget="/content/bootcamp-aem/us/en"
         cq:template="/conf/bootcamp-aem/settings/wcm/templates/spa-app-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="BootCamp AEM"
         sling:configRef="/conf/bootcamp-aem"
-        sling:redirect="{Boolean}true"
+        sling:redirect="true"
         sling:redirectStatus="{Long}302"
-        sling:resourceType="bootcamp-aem/components/page">
+        sling:resourceType="bootcamp-aem/components/page"
+        pwaCachestrategy="staleWhileRevalidate"
+        pwaDisplay="standalone"
+        pwaOrientation="any">
         <image jcr:primaryType="nt:unstructured">
             <file/>
         </image>

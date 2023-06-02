@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2023-06-01T10:54:22.546-03:00"
+        cq:lastModified="{Date}2023-06-02T09:31:45.787-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/bootcamp-aem/settings/wcm/templates/bootcamp"
         jcr:primaryType="cq:PageContent"
@@ -13,17 +13,7 @@
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid">
-                <text
-                    jcr:lastModified="{Date}2023-06-01T10:54:22.544-03:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="bootcamp-aem/components/text"
-                    text="&lt;p>GROUP&lt;/p>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured"/>
-                </text>
-            </responsivegrid>
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
         </root>
     </jcr:content>
 </jcr:root>

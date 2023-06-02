@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        pageTitle="BootCamp AEM"
+        cq:template="/conf/bootcamp-aem/settings/wcm/templates/spa-app-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="en"
-        cq:template="/conf/bootcamp-aem/settings/wcm/templates/spa-app-template"
         sling:resourceType="bootcamp-aem/components/spa"
-    >
-    </jcr:content>
+        pageTitle="BootCamp AEM"/>
+    <home/>
 </jcr:root>

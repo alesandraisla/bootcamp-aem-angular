@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="DIALOG VAZIA"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <border
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                        level="{Long}1"
+                                        text="Componente não autorável"/>
+                                    <button-text
+                                        name="./buttonText"
+                                        required="{Boolean}true"
+                                        fieldLabel="Descrição do campo"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                    <config-multifield-menu
+                                        margin="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <multifield-menu
+                                                composite="{Boolean}true"
+                                                jcr:primaryType="nt:unstructured"
+                                                eaem-show-on-collapse="EAEM.showProductName"
+                                                fieldLabel="Configure as propriedades do menu"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                                                <field
+                                                    name="./menuObject"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/container"
+                                                    granite:class="cmp-form-options__editor-item-multifield-composite-item coral-Well">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container"
+                                                            granite:class="cmp-form-options__editor-item-multifield-composite-item-container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <name-menu
+                                                                    name="./name"
+                                                                    required="{Boolean}true"
+                                                                    fieldLabel="Título"
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                                                <link-menu
+                                                                    name="./link"
+                                                                    fieldLabel="URL externa"
+                                                                    required="{Boolean}true"
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathbrowser"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    max="1"
+                                                    min="1"
+                                                    regex="multifield"
+                                                    regexText="Insira no mínimo 02 propriedades. No máximo 03"/>
+                                            </multifield-menu>
+                                        </items>
+                                    </config-multifield-menu>
+                                     <pathImage
+                                        name="./pathImage"
+                                        required="{Boolean}true"
+                                        fieldLabel="Caminho da imagem"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"/>
+                                </items>
+                            </border>
+                        </items>
+                    </column>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jcr:root 
+    jcr:title="Header"
+    componentGroup="BootCamp AEM"
+    jcr:primaryType="cq:Component"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"/>
