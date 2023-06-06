@@ -1,15 +1,19 @@
 <header>
-    <div class="structure__logo">
-        <img [src]=pathImage>
-    </div>
-    <div class="structure__menu">
-        <nav>
-            <ul>
-                <li *ngFor="let item of menuObject"> <a [href]=item.link> {{item.name}} </a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="structure__button">
-        <button>{{buttonText}}</button>
-    </div>
+  <div class="structure__logo">
+    <img [src]="pathImage" />
+  </div>
+  <div class="structure__menu">
+    <nav>
+      <ul>
+        <li *ngFor="let item of menuObject">
+          <a target="_blank" [href]="item.link"> {{ item.name }} </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="structure__button">
+    <button>
+      {{ buttonLink }}
+    </button>
+  </div>
 </header>
