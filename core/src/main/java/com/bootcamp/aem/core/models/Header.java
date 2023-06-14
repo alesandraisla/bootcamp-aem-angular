@@ -13,26 +13,31 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import static lombok.AccessLevel.NONE;
 import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIONAL;
+
 @Getter
-@Model( defaultInjectionStrategy = OPTIONAL,
-		resourceType = Header.RESOURCE_TYPE,
-		adaptables = SlingHttpServletRequest.class,
-		adapters = { ComponentExporter.class, Header.class, } )
+@Model(defaultInjectionStrategy = OPTIONAL, resourceType = Header.RESOURCE_TYPE, adaptables = SlingHttpServletRequest.class, adapters = {
+		ComponentExporter.class, Header.class, })
 
 public class Header implements ComponentExporter {
 
 	static final String RESOURCE_TYPE = "bootcamp-aem/components/header";
 
 	@Getter(NONE)
-	@Inject ResourceResolver resourceResolver;
+	@Inject
+	ResourceResolver resourceResolver;
 
-	@ValueMapValue private String buttonText;
-	@ValueMapValue private String pathImage;
+	@ValueMapValue
+	private String buttonText;
+	@ValueMapValue
+	private String pathImage;
+	@ValueMapValue
+	private String buttonLink;
 
+	@ChildResource
+	List<Resource> menuObject;
 
-	@ChildResource List<Resource> menuObject;
-
-
-	@Override public String getExportedType() { return RESOURCE_TYPE; }
+	@Override
+	public String getExportedType() {
+		return RESOURCE_TYPE;
+	}
 }
-

@@ -12,8 +12,10 @@
     </nav>
   </div>
   <div class="structure__button">
-    <button>
-      {{ buttonLink }}
-    </button>
+    <a target="_blank" [href]="buttonLink">
+      <button>
+        {{ buttonText }}
+      </button>
+    </a>
   </div>
 </header>
